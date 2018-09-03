@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent">
+
+            <EditText
+                android:id="@+id/test"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/round_edge"
+                android:hint="@string/mm_inch"
+                android:inputType="textCapWords"
+                android:paddingLeft="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/sizeOfBelt"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/round_edge"
+                android:hint="@string/size_of_belt"
+                android:inputType="numberDecimal"
+                android:paddingLeft="20dp"
+                app:layout_constraintEnd_toEndOf="@+id/test"
+                app:layout_constraintStart_toStartOf="@+id/test"
+                app:layout_constraintTop_toBottomOf="@id/test" />
+
+            <EditText
+                android:id="@+id/numberOfBelt"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/round_edge"
+                android:paddingLeft="20dp"
+                android:hint="@string/number_of_belt"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="@+id/sizeOfBelt"
+                app:layout_constraintStart_toStartOf="@+id/sizeOfBelt"
+                app:layout_constraintTop_toBottomOf="@+id/sizeOfBelt" />
+
+            <Button
+                android:id="@+id/conti"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/round_edge_button"
+                android:text="@string/conti"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/numberOfBelt"
+                app:layout_constraintStart_toStartOf="@+id/numberOfBelt"
+                app:layout_constraintTop_toBottomOf="@+id/numberOfBelt" />
+
+            <Button
+                android:id="@+id/calculate"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/round_edge_button"
+                android:text="@string/calculate"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/numberOfBelt"
+                app:layout_constraintStart_toStartOf="@+id/numberOfBelt"
+                app:layout_constraintTop_toBottomOf="@+id/conti" />
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginBottom="64dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/round_edge"
+                android:padding="10dp"
+                android:text="@string/output"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/calculate"
+                app:layout_constraintStart_toStartOf="@+id/calculate"
+                app:layout_constraintTop_toBottomOf="@+id/calculate" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

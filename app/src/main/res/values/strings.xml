@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ManualFlipping</string>
+    <string name="size_of_belt">Enter Size of Belt</string>
+    <string name="number_of_belt">Enter Number of Belts</string>
+    <string name="output">Output</string>
+    <string name="calculate">Calculate</string>
+    <string name="mm_inch">MM / INCH</string>
+    <string name="conti">Continue</string>
+</resources>
