@@ -96,6 +96,20 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Enter the size & number of belts", Toast.LENGTH_SHORT).show()
             return false
         }
+        else if(size.toString().toFloat()==0.0f){
+            var output: Float
+            if(test.text.toString()=="MIN") {
+                output = (number.toString().toFloat() * 13) / 60
+                dialog += "REASON    "+number.toString()+"  Mins   "+("%.2f".format(output))+"      "
+            }
+            else {
+                output = number.toString().toFloat() * 13
+                dialog += "REASON    "+number.toString()+"  Hours   "+("%.2f".format(output))+"      "
+            }
+            final += output
+            dialog += ("%.2f".format(final))+"\n"
+            return false
+        }
         else {
             size_of_belt = size.toString().toFloat()
             number_of_belt = number.toString().toFloat()
